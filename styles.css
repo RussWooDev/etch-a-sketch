@@ -1,5 +1,6 @@
-.sketchboard{
+.board{
     width: 600px;
     height: 600px;
     display: grid;
+    border: 0.1em solid darkgray;
 }
