@@ -13,12 +13,14 @@
     <div class="sketchpad">
       <div class="title">Sketchpad</div>
       <div class="content">
+        <div class="mode">Coloring: On</div>
         <div class="board"></div>
         <div class="buttons">
-          <button>Black</button>
-          <button>Grey</button>
-          <button>Reset</button>
-          <button>Random</button>
+          <button onclick="changeColor('black')">Black</button>
+          <button onclick="changeColor('grey')">Grey</button>
+          <button onclick="changeColor('white')">Erase</button>
+          <button onclick="changeColor('random')">Random</button>
+          <button onclick="resetBoard()">Reset</button>
         </div>
         <div class="sizeAdjust">
           <input type="text" name="sizeAdjust" value="16" placeholder="How many Squares?" onchange="changeSize(this.value)">
